@@ -17,9 +17,14 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
+from django.contrib import admin
+from django.urls import path, include
+
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('students/', include('students.urls')),
+    path('media/', include('media_files.urls')),
+    path('expensive-pets/', include('expensive_pets.urls')),
 ]
+
 
 

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Media List</title>
+</head>
+<body>
+    <h1>Media List</h1>
+    <a href="{% url 'media_add' %}">Add New Media</a>
+    <ul>
+        {% for media in object_list %}
+            <li>
+                {{ media.name }} - {{ media.type }} - {{ media.format }} - {{ media.size }} MB - {{ media.duration_secs }} secs
+                <a href="{% url 'media_edit' media.pk %}">Edit</a> - 
+                <a href="{% url 'media_delete' media.pk %}">Delete</a>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
