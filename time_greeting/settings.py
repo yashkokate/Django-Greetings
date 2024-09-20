@@ -42,7 +42,8 @@ INSTALLED_APPS = [
     'students',
     'media_files',
     'expensive_pets',
-    'demoapp'
+    'demoapp',
+    'employees'
 ]
 
 MIDDLEWARE = [

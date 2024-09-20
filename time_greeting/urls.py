@@ -19,13 +19,16 @@ from django.urls import path, include
 
 from django.contrib import admin
 from django.urls import path, include
+from django.conf import settings
+from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('media/', include('media_files.urls')),
     path('expensive-pets/', include('expensive_pets.urls')),
     path('session/', include('demoapp.urls')),
-]
+    path('employee/', include('employees.urls')),
+]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 
 
