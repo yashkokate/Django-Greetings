@@ -43,7 +43,8 @@ INSTALLED_APPS = [
     'media_files',
     'expensive_pets',
     'demoapp',
-    'employees'
+    'employees',
+    'client_management'
 ]
 
 MIDDLEWARE = [

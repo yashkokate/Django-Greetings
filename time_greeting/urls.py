@@ -28,6 +28,7 @@ urlpatterns = [
     path('expensive-pets/', include('expensive_pets.urls')),
     path('session/', include('demoapp.urls')),
     path('employee/', include('employees.urls')),
+    path('client_management/', include('client_management.urls'))
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 

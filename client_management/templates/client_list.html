@@ -1,0 +1,6 @@
+<h2>Client List</h2>
+<ul>
+    {% for client in clients %}
+        <li>{{ client.name }} - <a href="{% url 'client_edit' client.id %}">Edit</a></li>
+    {% endfor %}
+</ul>

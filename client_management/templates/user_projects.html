@@ -1,0 +1,6 @@
+<h2>My Projects</h2>
+<ul>
+    {% for project in projects %}
+        <li>{{ project.name }} - {{ project.client.name }}</li>
+    {% endfor %}
+</ul>

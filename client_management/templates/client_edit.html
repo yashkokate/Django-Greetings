@@ -1,0 +1,7 @@
+<h2>Edit Client Information</h2>
+<form method="POST">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" name="save">Save Changes</button>
+    <button type="submit" name="delete">Delete Client</button>
+</form>
