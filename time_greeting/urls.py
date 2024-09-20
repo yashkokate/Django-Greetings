@@ -24,6 +24,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('media/', include('media_files.urls')),
     path('expensive-pets/', include('expensive_pets.urls')),
+    path('session/', include('demoapp.urls')),
 ]
 
 
